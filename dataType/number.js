@@ -41,6 +41,35 @@ let maxNum = 1111111111111111111111111111111111111111111111111111111111111111111
 // console.log(minNum); // -1.1111111111111112e+308
 let minNum = -111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111;
 
+/* special: +0 -0 
+
+The IEEE 754 standard for floating point arithmetic 
+(presently used by most computers and programming languages 
+that support floating point numbers) requires both +0 and −0.
+The zeroes can be considered as a variant of the extended real
+number line such that 1/−0 = −∞ and 1/+0 = +∞
+
+Practical example would be: sorting a column
+-0 >> descending
+0 >> ascending
+*/
+// console.log(+0); //0
+// console.log(-0); //-0
+
+//test of -0
+// function isMinusZero(value) {
+//   return 1/value === -Infinity;
+// }
+// isMinusZero(0); // false
+// isMinusZero(-0); // true
+
+// console.log(5/0); //Infinity
+// console.log(5/-0); //-Infinity
+
+// console.log(+0 === -0); //true
+// console.log(Infinity === -Infinity); //false
+// console.log(Object.is(+0,-0));//false
+
 //Infinity/NaN is a value property - they dont have any attribute or method associated
 //typeof Infinity/NaN is a number
 let infinity = Infinity;
@@ -87,4 +116,4 @@ convert to string */
 /* conversion
 convert to boolean */
 
-console.log(23 | 1);
+// console.log(23 | 1);
