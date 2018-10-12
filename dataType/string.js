@@ -8,3 +8,8 @@ const c_d = ` c=${c} d=${d}`;
 console.log(a_b + c_d)
 
 // to be: how to pass templated sting in functions
+// to be: string functions
+var str = "abhishek";
+console.log(str.substring(2,5));
+
+console.log("Linux90#OS".match(/\D/g));

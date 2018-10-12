@@ -117,3 +117,8 @@ convert to string */
 convert to boolean */
 
 // console.log(23 | 1);
+
+// ------------------------------
+console.log('math function');
+
+console.log(Math.round(-23.19));

@@ -101,3 +101,20 @@ const a2 = (function(key){
   }[key]
 }('blue'));
 console.log(a2);
+
+
+var a =10;
+switch (a) {
+  case 5:
+    console.log('case - 5');
+    break;
+  default:
+  console.log('case - default');
+    
+  case 6:
+  console.log('case - 6');
+    break;
+  case 7:
+  console.log('case - 7');
+    break;
+}
