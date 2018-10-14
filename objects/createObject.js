@@ -11,6 +11,7 @@
  >> object.prototype.values
  >> object.prototype.seal
  >> object.prototype.freeze
+ >> object.prototype.valueOf
 */
 
 
@@ -266,3 +267,17 @@ console.log(Object.values(arrKeys));
 
 // object.seal   || object.isSeal(); not extable
 // object.freeze || object.isFreeze(); not able to add prop or deleted property
+
+// object.valueOf
+// valueOf returns primitive value of a given object
+// its very rarely used by developer, javascript automatically, 
+// handles this situation
+console.log('// ---------------object.prototype.valueOf------------');
+const myArray = [10, 20, 'Abhi'];
+const myObj = {
+  a:10,
+  b: 'abhi',
+  c: ()=>{},
+}
+console.log(myArray.valueOf());
+console.log(myObj.valueOf());
