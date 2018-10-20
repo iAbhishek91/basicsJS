@@ -120,5 +120,26 @@ convert to boolean */
 
 // ------------------------------
 console.log('math function');
-
-console.log(Math.round(-23.19));
+console.log('// ---------Math.round()--------');
+console.log(Math.round(-23.19)); // -23
+console.log(Math.round(23.19)); // 23
+console.log(Math.round(-23.59)); // -24
+console.log('// ---------Math.floor()--------');
+console.log(Math.floor(-23.19)); // -24
+console.log(Math.floor(23.19)); // 23
+console.log(Math.floor(-23.59)); // -24
+console.log('// ---------Math.ceil()--------');
+console.log(Math.ceil(-23.19)); // -23
+console.log(Math.ceil(23.19)); // 24
+console.log(Math.ceil(-23.59)); // -23
+console.log('// ---------Math.random()--------');
+console.log(Math.random());
+console.log('// ---------Math.toString()--------');
+console.log(Math.random().toString());// 0.6867986987
+console.log(Math.random().toString(32));//0.jasdlkfhi
+console.log('// ---------String.subString()--------');
+console.log(Math.random().toString(32).substring(7));
+console.log('// ---------String.split()--------');
+console.log(Math.random().toString(32).substring(7).split(''));
+console.log('// ---------String.join()--------');
+console.log(Math.random().toString(32).substring(7).split('').join('.')); // 7.3.p.b.v

@@ -50,3 +50,30 @@ const newObj = {
   'my-rule': d,     // option-4: another version of option-4
 };
 console.log(newObj);
+
+// object
+let aaaa = {
+  a1:20,
+  b1:40,
+};
+let bbbb = {
+  a1: 30, 
+};
+aaaa = {...aaaa, ...{
+  a1: 55
+}};
+console.log(aaaa);
+
+class Sarath {
+  static age = 25;
+  static displayThis(){console.log(this); return 'hi'}
+}
+/*const sarathObj = new Sarath();
+sarathObj.displayThis();*/
+console.log(Sarath.displayThis());
+
+function Abhishek(){
+  this.a =10;
+}
+
+const abhishekObj = new Abhishek();
